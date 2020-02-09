@@ -18,13 +18,13 @@ class Directory extends Component {
 
     render() {
         const { navigate } = this.props.navigation;
-        const renderDirectoryItem = ({item}) => {
+        const renderDirectoryItem = ({ item }) => {
             return (
                 <ListItem
                     title={item.name}
                     subtitle={item.description}
                     onPress={() => navigate('CampsiteInfo', { campsiteId: item.id })}
-                    leftAvatar={{ source: require('./images/react-lake.jpg')}}
+                    leftAvatar={{ source: require('./images/react-lake.jpg') }}
                 />
             );
         };

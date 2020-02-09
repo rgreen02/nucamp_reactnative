@@ -105,7 +105,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="34" width="1400" height="1000" extended-state="0" />
+    <frame x="209" y="34" width="1400" height="1000" extended-state="1" />
     <layout>
       <window_info id="Build Variants" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />

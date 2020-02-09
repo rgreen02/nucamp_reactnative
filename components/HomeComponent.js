@@ -5,14 +5,14 @@ import { CAMPSITES } from '../shared/campsites';
 import { PROMOTIONS } from '../shared/promotions';
 import { PARTNERS } from '../shared/partners';
 
-function RenderItem({item}) {
+function RenderItem({ item }) {
     if (item) {
         return (
             <Card
                 featuredTitle={item.name}
                 image={require('./images/react-lake.jpg')}>
                 <Text
-                    style={{margin: 10}}>
+                    style={{ margin: 10 }}>
                     {item.description}
                 </Text>
             </Card>
@@ -39,11 +39,10 @@ class Home extends Component {
     render() {
         return (
             <ScrollView>
-                <RenderItem 
-                    item={this.state.campsites.filter(campsite => campsite.featured)[0]} />
-                <RenderItem 
+                <RenderItem item={this.state.campsites.filter(campsite => campsite.featured)[0]} />
+                <RenderItem
                     item={this.state.promotions.filter(promotion => promotion.featured)[0]} />
-                <RenderItem 
+                <RenderItem
                     item={this.state.partners.filter(partner => partner.featured)[0]} />
             </ScrollView>
         );
