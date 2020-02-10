@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="511274fe-d478-4444-89c3-edace5cea9c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/components/DirectoryComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DirectoryComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/MainComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +39,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="209" />
     <option name="y" value="34" />
     <option name="width" value="1400" />
@@ -105,9 +106,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="209" y="34" width="1400" height="1000" extended-state="1" />
+    <frame x="209" y="34" width="1400" height="1000" extended-state="0" />
     <layout>
-      <window_info id="Build Variants" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="1" weight="0.17548949" />
       <window_info id="Structure" order="2" side_tool="true" />
@@ -116,18 +116,19 @@
       <window_info id="Resources Explorer" order="5" weight="0.32994923" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" />
+      <window_info id="Build Variants" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="0" weight="0.32929516" />
       <window_info anchor="bottom" id="TODO" order="1" weight="0.32929516" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" weight="0.32929516" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" visible="true" weight="0.32929516" />
-      <window_info active="true" anchor="right" id="Device File Explorer" side_tool="true" visible="true" weight="0.3298969" />
+      <window_info anchor="bottom" id="Logcat" order="5" />
+      <window_info anchor="bottom" id="Android Profiler" order="6" show_stripe_button="false" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Assistant" order="2" visible="true" weight="0.29381442" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info active="true" anchor="right" id="Device File Explorer" order="4" side_tool="true" visible="true" weight="0.3298969" />
     </layout>
   </component>
   <component name="editorHistoryManager">
