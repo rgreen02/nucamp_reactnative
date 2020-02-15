@@ -7,6 +7,7 @@ class Directory extends Component {
 
     constructor(props) {
         super(props);
+
         this.state = {
             campsites: CAMPSITES
         };
@@ -18,6 +19,7 @@ class Directory extends Component {
 
     render() {
         const { navigate } = this.props.navigation;
+
         const renderDirectoryItem = ({ item }) => {
             return (
                 <ListItem

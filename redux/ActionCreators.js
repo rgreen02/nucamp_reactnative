@@ -1,6 +1,5 @@
-import * as ActionTypes from '.ActionTypes';
+import * as ActionTypes from './ActionTypes';
 import { baseUrl } from '../shared/baseUrl';
-import { promotions } from './promotions';
 
 /* Comments Action Creator */
 export const fetchComments = () => dispatch => {
@@ -110,7 +109,7 @@ export const addPromotions = promotions => ({
 
 /* Partners Action Creator */
 export const fetchPartners = () => dispatch => {
-    dispatch(partnersLaoding());
+    dispatch(partnersLoading());
 
     return fetch(baseUrl + 'partners')
         .then(response => {
@@ -135,7 +134,7 @@ export const partnersLoading = () => ({
     type: ActionTypes.PARTNERS_LOADING
 });
 
-export const patnersFailed = errMess => ({
+export const partnersFailed = errMess => ({
     type: ActionTypes.PARTNERS_FAILED,
     payload: errMess
 });
