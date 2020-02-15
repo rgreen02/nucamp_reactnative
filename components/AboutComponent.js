@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
-import { Text, ScrollView, FlatList } from 'react-native';
+import { View, Text, ScrollView, FlatList } from 'react-native';
 import { Card, ListItem } from 'react-native-elements';
-import { connect } from 'react-redux';
-import { baseUrl } from '../shared/baseUrl';
-
-const mapStateToProps = state => {
-    return {
-        partners: state.partners
-    };
-};
+import { PARTNERS } from '../shared/partners';
+import { CAMPSITES } from '../shared/campsites';
 
 function Misson() {
     return (
@@ -21,6 +15,8 @@ function Misson() {
             </Text>
         </Card>
     );
+
+    return <View />;
 }
 
 function RenderPartner({ item }) {
@@ -41,6 +37,15 @@ function RenderPartner({ item }) {
 
 
 class About extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            partners: PARTNERS,
+            campsites: CAMPSITES
+        };
+    }
+
     static navigationOptions = {
         title: 'About'
     }
@@ -52,7 +57,7 @@ class About extends Component {
                 <ListItem
                     title={item.name}
                     subtitle={item.description}
-                    leftAvatar={{ source: {uri: baseUrl + item.image}}}
+                    leftAvatar={{ source: require('./images/bootstrap-logo.png') }}
                 />
             );
         };
@@ -63,14 +68,16 @@ class About extends Component {
                 <Card
                     title='Community Partners'>
                     <FlatList
-                        data={this.props.partners.partners}
+                        data={this.state.partners}
                         renderItem={renderPartner}
                         keyExtractor={item => item.id.toString()}
                     />
                 </Card>
+
+
             </ScrollView>
         );
     }
 }
 
-export default connect(mapStateToProps)(About);
+export default About;
