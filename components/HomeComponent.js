@@ -19,7 +19,7 @@ function RenderItem({ item }) {
                 </Text>
             </Card>
         );
-    }
+    }``
     return <View />;
 }
 
